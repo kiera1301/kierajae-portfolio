@@ -1,12 +1,12 @@
 /*BASE STYLES*/
+
 .full-width {
   width: 1280px;
   margin: 0 auto;
 }
 
 .half-width {
-  width: 600px;
-  float: left;
+  width: 480px;
 }
 
 .third-width {
@@ -14,30 +14,6 @@
   margin: 0 13px 40px;
   float: left;
   text-align: center;
-}
-
-h1 {
-  font-family: 'Lora', serif;
-  font-size: 150px;
-  text-align: center;
-  background: #F77993;
-  border-radius: 8px;
-  margin: 150px auto 50px;
-  width: 800px;
-  padding: 10px 0;
-  color: #fff;
-}
-
-h2 {
-  font-family: 'Lora', serif;
-  font-size: 40px;
-  text-align: center;
-  background: #ff7da6;
-  border-radius: 8px;
-  margin: 0 auto;
-  width: 300px;
-  padding: 15px 30px;
-  color: #fff;
 }
 
 h3 {
@@ -59,7 +35,6 @@ p, p a {
   font-family: 'Lato', sans-serif;
   line-height: 25px;
 }
-
 /*HEADER*/
 
 nav ul li {
@@ -75,24 +50,13 @@ nav ul li a {
   text-decoration: none;
 }
 
-#intro {
-
-  background: url("../img/flowers.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-top: 2px solid #ff7da6;
-  border-bottom: 2px solid #ff7da6;
-  height: 640px;
-  clear: both;
-}
-
 /*MAIN*/
 
 main {
+  clear: both;
   overflow: auto;
-
   background: #ffe89e;
+  border-top: 2px solid #ff7da6;
   border-bottom: 2px solid #ff7da6;
 }
 
@@ -101,83 +65,102 @@ main h4, footer h4{
   color: #b2a63b;
 }
 
-.portfolio-images {
+.garage-leaflet {
   float: left;
-  clear: left;
-  width: 540px;
-  height: 295px;
+  width: 380px;
+  height: 507px;
   border: 2px solid #b2a63b;
   border-radius: 20px;
-  margin: 0 50px 50px 90px;
+  margin: 0 20px 20px 50px;
 }
 
-.portfolio-description {
-  width: 500px;
-  float: right;
-  margin-right: 90px;
-
-}
-
-.rogue-pickings {
+.poster-one {
   float: left;
-
+  clear: both;
+  width: 380px;
+  height: 507px;
+  border: 2px solid #b2a63b;
+  border-radius: 20px;
+  margin-left: 45px;
 }
 
-/*ABOUT ME*/
-
-section {
-  background: url("../img/flowers.jpg");
-  overflow: auto;
-  border-bottom: 2px solid #ff7da6;
+.posters {
+  float: left;
+  width: 380px;
+  height: 507px;
+  border: 2px solid #b2a63b;
+  border-radius: 20px;
+  margin: 0 0 20px 20px;
 }
+
+.business-cards {
+  float: left;
+  width: 375px;
+  height: 241px;
+  border: 2px solid #b2a63b;
+  border-radius: 20px;
+}
+
+.business-card {
+  margin-bottom: 20px;
+}
+
+.business-card-back {
+  margin: 0 0 20px 20px;
+}
+
+.business-card-cog-back {
+ margin-left: 20px;
+}
+
+.facebook-ad {
+  float: left;
+  width: 787px;
+  height: 497px;
+  border: 2px solid #b2a63b;
+  border-radius: 20px;
+  margin: 0 20px 45px 45px;
+}
+
+.email-marketing {
+  float: left;
+  width: 380px;
+  height: 499px;
+  border: 2px solid #b2a63b;
+  border-radius: 20px;
+  margin: 0 20px 20px 0;
+}
+
+/*SECTION*/
+
 
 section h3, h4 {
-  color: #fff;
+  color: #F77993;
 }
 
 section h4 {
   font-size: 30px;
 }
 
-section h3 {
-  margin-top: 0;
-  text-align: left;
-}
 
 section p {
   color: #fff;
 }
 
-.pink-box {
-  width: 1000px;
-  height: 500px;
-  background: #ff7da6;
-  border-radius: 10px;
-  margin: 100px auto;
-}
-
-.profile-pic {
-  width: 300px;
-  height: 370px;
-  border: 3px solid #D6ECF1;
+iframe {
+  border: 2px solid #b2a63b;
   border-radius: 20px;
-  margin: 65px 0 50px 215px;
-  float: left;
+  margin: 0 0 45px 45px;
+
 }
 
-.my-story {
-  width: 500px;
-  line-height: 27px;
-  margin: 140px 0 0 50px;
-  border-radius: 10px;
-  float: left;
-}
 
 /*FOOTER*/
 
 footer {
   background: #ffe89e;
   overflow: auto;
+  border-top: 2px solid #ff7da6;
 }
 
 footer a {
