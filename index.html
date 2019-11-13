@@ -9,17 +9,23 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
-            <link rel="stylesheet" href="css/normalize.css">
-            <link rel="stylesheet" href="css/main.css">
-            <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700&display=swap"
-            rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <!--JQuery-->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!--GOOGLE FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700&display=swap"
+         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     </head>
     <body>
       <header id="home">
+        <div id="btn-toggle-nav"></div>
           <nav>
-            <div class="container">
-            <ul>
+            <div class="container header-container">
+            <ul class=>
              <li><a href="#home">Home</a></li>
              <li><a href="#portfolio">Portfolio</a></li>
              <li><a href="#about">About</a></li>
@@ -45,9 +51,7 @@
            <div class="portfolio-box">
           <h4>Jubilee Austen</h4>
             <p class="skills"><strong>HTML5 | CSS | PHOTOSHOP</strong></p>
-            <p>I created a one page static website for a
-             fictional web developer coded from a Photoshop design comp using HTML and
-             CSS.</p>
+            <p>One page static website for a web developer coded from a Photoshop design comp using HTML and CSS.</p>
          </div>
            <figure>
               <a href="https://kiera1301.github.io/101-rogue-pickings/" target="_blank">
@@ -56,9 +60,7 @@
         <div class="portfolio-box">
           <h4>Rogue Pickings</h4>
           <p class="skills"><strong>HTML5 | CSS | PHOTOSHOP</strong></p>
-          <p>One page static website for a fictional client called
-             Rogue Pickings. This project was coded from a Photoshop design comp using
-             HTML & CSS.</p>
+          <p>One page static website. This project was coded from a Photoshop design comp using HTML & CSS.</p>
         </div>
         <figure>
         <a href="https://kiera1301.github.io/101-holstee-manifesto/" target="_blank">
@@ -77,8 +79,26 @@
       <div class="portfolio-box">
         <h4>Unplugged</h4>
         <p class="skills"><strong>RESPONSIVE | HTML5 | CSS | PHOTOSHOP</strong></p>
-        <p>Fully responsive website created for a fictional retreat business using a moible-first approach.</p>
+        <p>Fully responsive website, created using a moible-first approach.</p>
       </div>
+      <figure>
+         <a href="https://kiera1301.github.io/lolcat-clock/" target="_blank">
+         <img src="img/lolcat-clock.jpg" alt="Lol-Cat Clock"></a>
+      </figure>
+   <div class="portfolio-box">
+     <h4>Cat Clock</h4>
+     <p class="skills"><strong>JAVASCRIPT | HTML5 | CSS</strong></p>
+     <p>Responsive cat clock created using Javascript,<br> HTML &amp; CSS.</p>
+   </div>
+   <figure>
+      <a href="https://kiera1301.github.io/magic-8-ball/" target="_blank">
+      <img src="img/magic-8-ball.jpg" alt="Magic-8-Ball"></a>
+   </figure>
+<div class="portfolio-box">
+  <h4>Magic 8-Ball</h4>
+  <p class="skills"><strong>JAVASCRIPT | HTML5 | CSS</strong></p>
+  <p>Responsive Magic 8-Ball created using Javascript,<br> HTML &amp; CSS.</p>
+</div>
        </div>
       </div>
      </main>
@@ -93,6 +113,7 @@
                <p>Hello! My name is Kiera,<br> I am a web developer who is passionate about
                   creating aesthetically pleasing and
                   user-friendly websites.</p>
+                  <br>
                <p class="para-two">When i’m not coding you can find me exploring London with my friends,
                   reading anything from the horror section and discovering
                   new music events to attend.</p>
@@ -110,14 +131,14 @@
                  </div>
                 <div>
                   <h4>Social</h4>
-                    <a class="img-link" href="https://www.linkedin.com/in/kiera-merrifield-85433aa9/"
+                    <a href="https://www.linkedin.com/in/kiera-merrifield-85433aa9/"
                     target="_blank">
                     <i class="fab fa-linkedin"></i>
                     </a>
-                    <a class="img-link" href="https://www.instagram.com/kierajae/" target="_blank">
+                    <a href="https://www.instagram.com/kierajae/" target="_blank">
                       <i class="fab fa-instagram"></i>
                     </a>
-                  <a class="img-link" href="https://github.com/kiera1301" target="_blank">
+                  <a href="https://github.com/kiera1301" target="_blank">
                     <i class="fab fa-github-square"></i>
                   </a>
               </div>
@@ -131,5 +152,6 @@
               <p>Copyright 2019 | Kierajae</p>
             </div>
          </footer>
+         <script type="text/javascript" src="js/script.js"></script>
    </body>
 </html>
