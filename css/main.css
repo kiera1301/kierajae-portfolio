@@ -159,6 +159,25 @@ a {
 
 /*HEADER*/
 
+#btn-toggle-nav {
+  background-image: url("../img/menu-btn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 nav a {
   font-family: 'Merriweather', serif;
   font-size: 1em;
@@ -167,16 +186,22 @@ nav a {
 }
 
 nav li {
-    margin: 5px 0;
+  border-top: 2px solid #F77993;
+  padding: 0.75em 0;
+}
+
+.open {
+  display: block;
 }
 
 nav ul {
   list-style-type: none;
   text-align: center;
   margin: 0;
-  padding: 10px 0;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  display: none;
+  width: 100%;
+  padding: 0.75em 0 0 0;
 }
 
 nav a:hover,
@@ -202,7 +227,7 @@ nav a:focus {
 
 .title h1 {
   font-family: 'Lora', serif;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   background: #F77993;
   border-radius: 8px;
@@ -213,7 +238,7 @@ nav a:focus {
 
 .title .subtitle {
   font-family: 'Merriweather', serif;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: bold;
   text-align: center;
   background: #F77993;
@@ -258,7 +283,7 @@ section h3, p {
 }
 
 section p {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .profile-container {
@@ -412,15 +437,27 @@ footer a:focus {
 
    /*---------------------------MEDIA QUIERIES--------------------------------*/
 
-
+  @media only screen and (max-width:360px) {
+    .title h1 {
+      font-size: 4rem;
+    }
+  }
 
    @media only screen and (min-width:768px) {
      /*BASE LAYOUT*/
 
      .container {
        width: 90%;
-       max-width: 900px;
+       max-width: 1000px;
        margin: 0 auto;
+     }
+
+     .header-container {
+       width: 90%;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       flex-flow: row wrap;
      }
 
   /*HEADER*/
@@ -428,32 +465,59 @@ footer a:focus {
        border-bottom: 2px solid #ff7da6;
      }
 
+     /*ORIGINAL NAV STYLES*/
+
+     #btn-toggle-nav {
+       display: none;
+     }
+
      nav {
        border-bottom: 2px solid #ff7da6;
      }
 
-     nav .container {
-       justify-content: flex-end;
-     }
-     nav ul {
-       flex-flow: row wrap;
+     nav a {
+       font-family: 'Merriweather', serif;
+       font-size: 1em;
+       color: #F77993;
+       text-decoration: none;
+       border-top: none;
+       width: auto;
+       padding: 0;
      }
 
      nav li {
-       margin: 15px 10px;
+         display: inline;
+         border-top: none;
+         width: auto;
+         margin:0 15px 0 15px;
+         font-size: 1.125rem;
      }
+
+     nav ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 15px 0;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: flex-end;
+     }
+
 
      .title-container {
        flex-direction: column;
      }
 
      .title h1 {
-       font-size: 5rem;
-       width: 60%;
+       margin: 118px 0 0 0;
+       font-size: 8rem;
+
      }
 
      .title .subtitle {
-       font-size: 2rem;
+       font-size: 2.25rem;
+       padding: 15px 30px;
+       margin: 20px 0 118px 0;
+
      }
 
    /*MAIN*/
@@ -486,6 +550,7 @@ footer a:focus {
    }
 
    main p {
+     font-size: 1.15em;
      line-height: normal;
    }
 
@@ -528,6 +593,7 @@ footer a:focus {
    }
 
    section p {
+     font-size: 1.15em;
      width: 70%;
      margin: 0 auto;
    }
@@ -565,15 +631,10 @@ footer i {
 
 /*HEADER*/
 
-nav li {
-  font-size: 1.125em;
-  margin: 20px 15px;
-}
-
 .title h1 {
   margin: 118px 0 0 0;
   font-size: 8rem;
-  width: 60%;
+
 
 }
 
@@ -583,7 +644,6 @@ nav li {
   margin: 20px 0 118px 0;
 
 }
-
 /*MAIN*/
 
 main {
@@ -625,6 +685,10 @@ section figure {
   width: 50%;
   align-self: center;
   margin: 0;
+}
+
+.my-story p {
+   font-size: 1.15em;
 }
 
 .pink-box{
