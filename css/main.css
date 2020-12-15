@@ -266,7 +266,8 @@ main p {
 }
 
 main figure img {
-  width: 90%;
+  width: 30rem;
+  height: 17rem;
   border: 2px solid #b2a63b;
   border-radius: 20px;
 }
